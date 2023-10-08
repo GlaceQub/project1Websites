@@ -2,5 +2,43 @@
     --primColor: #1B3037;
     --secColor: #467272;
     --thirdColor: #ECFEEB;
+    --navbarItem: #467272;
+    --navbarItemText: #ECFEEB;
+    --navbarItemBorder: #375858;
+    --navbarItemHover: #375858;
 }
 
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.navbar{
+    background-color: var(--navbarItem);
+    width: 100%;
+    border: 3px solid var(--navbarItemBorder);
+    border-radius: 5px;
+}
+.navbarItems{
+    list-style-type: none;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.navbarItem{
+    vertical-align: middle;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    float: right;
+}
+.navbarItem>a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.75em;
+    color: var(--navbarItemText);
+    text-decoration: none;
+    vertical-align: middle;
+}
+.navbarItem:hover{
+    background-color: var(--navbarItemHover);
+    /* border: 1px solid var(--navbarItemBorder); */
+    /* border-radius: 3px; */
+}
