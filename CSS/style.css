@@ -1,44 +1,110 @@
 :root{
     --primColor: #1B3037;
-    --secColor: #467272;
-    --thirdColor: #ECFEEB;
-    --navbarItem: #467272;
-    --navbarItemText: #ECFEEB;
-    --navbarItemBorder: #375858;
-    --navbarItemHover: #375858;
+    --secColor: #375771;
+    --thirdColor: #f1f1f1;
+    --navbar: var(--primColor);
+    --navbarItemText: var(--thirdColor);
+    --navbarItemHover: var(--secColor);
 }
 
 body{
     font-family: 'Oxygen', sans-serif;
+    background-color: var(--thirdColor);
+    margin: 0;
+    font-size: 1.1em;
 }
 
+p{
+    margin: 0;
+}
+
+/* navbar */
 .navbar{
-    background-color: var(--navbarItem);
-    width: 100%;
-    border: 3px solid var(--navbarItemBorder);
-    border-radius: 5px;
+    background-color: var(--navbar);
+    width: auto;
 }
 .navbarItems{
+    display: flex;
+    align-items: center;
     list-style-type: none;
-    border-collapse: collapse;
     overflow: hidden;
     margin: 0;
     padding: 0;
+    height: 4.5em;
 }
 .navbarItem{
+    height: auto;
     vertical-align: middle;
-    padding: 0.3em 0.5em 0.3em 0.5em;
+    padding: 0.5em 1em 0.5em 1em;
     float: right;
 }
-.navbarItem>a{
+.navbarItem a{
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.75em;
+    font-size: 2.25em;
     color: var(--navbarItemText);
     text-decoration: none;
-    vertical-align: middle;
 }
-.navbarItem:hover{
+.navbarItem>div{
+    padding: 0.25em 0.75em 0.25em 0.75em;
+    border-radius: 15px;
+}
+.navbarItem>div:hover{
     background-color: var(--navbarItemHover);
-    /* border: 1px solid var(--navbarItemBorder); */
-    /* border-radius: 3px; */
+}
+
+/* Titels */
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em;
+    margin: 30px 0 0 0;
+    color: var(--primColor);
+    text-align: center;
+}
+
+hr{
+    border: 3px solid var(--secColor);
+    border-radius: 5px;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* Tables */
+.cv{
+    /* border-collapse: collapse; */
+    padding: 0px 50px 0px 50px;
+    vertical-align: top;
+    width: 50%;
+}
+ .cv>table{
+    width: 100%;
+    height: 100%;
+ }
+
+.cv th, .cv td{
+    padding: 5px;
+}
+
+.cv th{
+    border: 5px solid var(--primColor);
+    border-radius: 10px;
+    background-color: var(--secColor);
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 250;
+    font-size: 2em;
+    color: var(--thirdColor);
+    height: 40px;
+}
+
+.cv td{
+    text-align: justify;
+    vertical-align: top;
+    height: 200px;
+}
+
+.cv ul{
+    margin: 0;
+    padding: 0 0 0 20px;
 }
