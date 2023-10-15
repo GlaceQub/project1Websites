@@ -11,7 +11,7 @@ body{
     font-family: 'Oxygen', sans-serif;
     background-color: var(--thirdColor);
     margin: 0;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 p{
@@ -75,7 +75,7 @@ hr{
     /* border-collapse: collapse; */
     padding: 0px 50px 0px 50px;
     vertical-align: top;
-    width: 50%;
+    width: 33%;
 }
  .cv>table{
     width: 100%;
@@ -87,7 +87,6 @@ hr{
 }
 
 .cv th{
-    border: 5px solid var(--primColor);
     border-radius: 10px;
     background-color: var(--secColor);
     text-align: center;
@@ -101,10 +100,81 @@ hr{
 .cv td{
     text-align: justify;
     vertical-align: top;
-    height: 200px;
+    height: 220px;
 }
 
 .cv ul{
     margin: 0;
     padding: 0 0 0 20px;
+}
+
+.cv li{
+    padding-bottom: 5px;
+}
+
+a{
+    color: black;
+}
+
+
+/* Images */
+.profielFoto{
+    text-align: center;
+}
+
+.profielFoto>img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+}
+
+/* Boxes */
+#homeInfo{
+    padding: 0 50px 0 50px;
+}
+
+.textBlokBig{
+    text-align: center;
+    width: 800px;
+    margin: auto;
+}
+
+/* Links */
+.hyperLink, .hyperLinkButton{
+    text-decoration: none;
+}
+
+#homePaginaHyperLinks{
+    padding: 50px;
+    margin: auto;
+}
+
+.hyperLinkButton{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 300px;
+    background-color: var(--thirdColor);
+    border: 5px solid var(--primColor);
+    border-radius: 10px;
+    color: var(--primColor);
+    margin: 0 20px 0 20px;
+}
+
+.hyperLinkButton:hover{
+    background-color: var(--primColor);
+    color: var(--thirdColor);
+}
+
+.hyperLinkButton>div{
+    /* color: var(--thirdColor); */
+    margin: auto;
+}
+
+#homePaginaHyperLinks{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.25em;
+    font-weight: 300;
+    color: var(--thirdColor);
+    vertical-align: middle;
 }
