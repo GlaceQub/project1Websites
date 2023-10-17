@@ -18,6 +18,11 @@ p{
     margin: 0;
 }
 
+strong{
+    color: var(--primColor);
+    font-weight: bolder;
+}
+
 /* navbar */
 .navbar{
     background-color: var(--navbar);
@@ -52,6 +57,18 @@ p{
     background-color: var(--navbarItemHover);
 }
 
+.navbarCell{
+    width: 100%;
+}
+
+#navbarLogo{
+    display: flex;
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
 /* Titels */
 h1{
     font-family: 'Bebas Neue', sans-serif;
@@ -59,6 +76,26 @@ h1{
     margin: 30px 0 0 0;
     color: var(--primColor);
     text-align: center;
+}
+
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 20px 0 0 0;
+    color: var(--primColor);
+}
+
+h3{
+    font-size: 1.25em;
+    margin: 0 0 10px 0;
+    color: var(--primColor);
+}
+
+h4{
+    font-size: 1.0em;
+    margin: 0 0 5px 0;
+    color: var(--secColor);
 }
 
 hr{
@@ -71,22 +108,26 @@ hr{
 }
 
 /* Tables */
-.cv{
+.cvTable{
+    padding: 0 50px 0 50px;
+}
+
+.cvCol{
     /* border-collapse: collapse; */
     padding: 0px 50px 0px 50px;
     vertical-align: top;
     width: 33%;
 }
- .cv>table{
+ .cvCol>table{
     width: 100%;
     height: 100%;
  }
 
-.cv th, .cv td{
+.cvCol th, .cvCol td{
     padding: 5px;
 }
 
-.cv th{
+.cvCol th{
     border-radius: 10px;
     background-color: var(--secColor);
     text-align: center;
@@ -97,18 +138,18 @@ hr{
     height: 40px;
 }
 
-.cv td{
+.cvCol td{
     text-align: justify;
     vertical-align: top;
     height: 220px;
 }
 
-.cv ul{
+.cvCol ul{
     margin: 0;
     padding: 0 0 0 20px;
 }
 
-.cv li{
+.cvCol li{
     padding-bottom: 5px;
 }
 
@@ -116,6 +157,9 @@ a{
     color: black;
 }
 
+caption{
+    caption-side: bottom;
+}
 
 /* Images */
 .profielFoto{
@@ -177,4 +221,20 @@ a{
     font-weight: 300;
     color: var(--thirdColor);
     vertical-align: middle;
+}
+
+.workExp{
+    border: 5px solid var(--primColor);
+    border-radius: 20px;
+    margin: 30px 100px 30px 100px;
+    padding: 20px;
+    /* background-color: var(--secColor);
+    color: var(--thirdColor); */
+}
+
+.workExp h2{
+    margin: 0;
+}
+.workExp p{
+    text-align: justify;
 }
