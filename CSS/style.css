@@ -82,7 +82,7 @@ h2{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 300;
     font-size: 2em;
-    margin: 20px 0 0 0;
+    margin: 0;
     color: var(--primColor);
 }
 
@@ -164,12 +164,19 @@ caption{
 /* Images */
 .profielFoto{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .profielFoto>img{
     height: 500px;
     width: 500px;
     border-radius: 50px;
+}
+
+#fotoPsController{
+    height: 550px;
+    width: auto;
+    
 }
 
 /* Boxes */
@@ -215,6 +222,7 @@ caption{
     margin: auto;
 }
 
+/* overig */
 #homePaginaHyperLinks{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.25em;
@@ -223,7 +231,7 @@ caption{
     vertical-align: middle;
 }
 
-.workExp{
+.workExp, .interest{
     border: 5px solid var(--primColor);
     border-radius: 20px;
     margin: 30px 100px 30px 100px;
@@ -232,9 +240,64 @@ caption{
     color: var(--thirdColor); */
 }
 
-.workExp h2{
-    margin: 0;
-}
 .workExp p{
     text-align: justify;
+}
+
+.interest{
+    display: flex;
+}
+
+.textJust{
+    text-align: justify;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.boxText{
+    width: 70%;
+    padding: 0 10px 0 10px;
+}
+
+.boxImg{
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+.boxImg img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+/* Forms */
+.contactForm{
+    border: 5px solid var(--primColor);
+    border-radius: 20px;
+    padding: 20px;
+    /* margin: 30px 100px 30px 100px; */
+    margin: auto;
+    width: 500px
+}
+
+.contactForm div, .contactForm label{
+    padding: 0 0 10px 0;
+}
+
+.contactForm input{
+    width: 495px;
+}
+
+.contactForm input[type="submit"]{
+    margin:auto;
+    width: 100px;
+    height: 30px;
+}
+
+ul.noStyle{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
