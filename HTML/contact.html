@@ -54,6 +54,48 @@
     <div id="pageContent">
         <h1>Contact</h1>
         <hr>
+        <div class="contactForm">
+            <form method="post" action="https://tm-statweb.be/sendmail.php">
+                
+                <input type="hidden" name="studentemail" value="r0702593@student.thomas.be">
+                <div>
+                    <label for="voornaam">Voornaam <br>
+                        <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="Achternaam">Achternaam <br>
+                        <input type="text" name="Achternaam" id="Achternaam" placeholder="Achternaam" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="Bedrijf">Bedrijf <span class="optioneel">(Optioneel)</span> <br>
+                        <input type="text" name="Bedrijf" id="Bedrijf">
+                    </label>
+                </div>
+                <div>
+                    <label for="Functie">Functie <span class="optioneel">(Optioneel)</span> <br>
+                        <input type="text" name="Functie" id="Functie">
+                    </label>
+                </div>
+                <div>
+                    <label for="Email">Email <br>
+                        <input type="text" name="Email" id="Email" placeholder="voorbeeld@gmail.com" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="GSM">GSM <br>
+                        <input type="tel" name="GSM" id="GSM" placeholder="gsm nr." required>
+                    </label>
+                </div>
+                <div>
+                    <label for="Boodschap">Boodschap <br>
+                        <input type="text" name="Boodschap" id="Boodschap" placeholder="Typ hier uw boodschap" required>
+                    </label>
+                </div>
+                <input type="submit" value="Verzenden">
+            </form>
+        </div>
     </div>
 </body>
 </html>
